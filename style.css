@@ -8,7 +8,7 @@ body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-#container {
+#left-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@ body {
     display: inline;
 }
 
-#container span {
+#left-container span {
     position: absolute;
     top: 97vh;
     color: white;
