@@ -1,3 +1,7 @@
+:root {
+    --left-padding: 48px;
+}
+
 @font-face {
     font-family: norse-bold;
     src: url(Norse-Bold.otf);
@@ -13,6 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+    flex: none;
 }
 
 #plant {
@@ -48,4 +53,107 @@ body {
     position: absolute;
     top: 97vh;
     color: white;
+}
+
+#right-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.top, .bottom {
+    background-color: #f6f6f8;
+    flex: 1;
+    display:flex;
+    padding: var(--left-padding)
+}
+
+.top p {
+    width: 600px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.middle {
+    border-style: hidden;
+    position: relative;
+    box-shadow: 0px 5px 5px lightgray;
+    padding: 16px var(--left-padding);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    justify-content: space-between;
+    
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(61, 61, 61);
+}
+
+input {
+    width: 225px;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+input:focus-visible {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 2px blue;
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0 0 2px red;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+.bottom button {
+    width: 225px;
+    height: 50px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    border-style: none;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.bottom p {
+    font-weight: 600;
+}
+
+.bottom p span {
+    color: #596D48;
 }
